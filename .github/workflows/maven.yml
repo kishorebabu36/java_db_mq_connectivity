@@ -4,12 +4,8 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-
-jobs:
+  workflow_dispatch:
+  
   build:
 
     runs-on: ubuntu-latest
